@@ -4,13 +4,13 @@ const Layout = () => {
   return (
     <>
       <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-          <div class="container-fluid">
-            <Link class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+          <div className="container-fluid">
+            <Link className="navbar-brand" href="#">
               Navbar
             </Link>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -18,32 +18,43 @@ const Layout = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <Link class="nav-link active" aria-current="page" to="/home">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/home"
+                  >
                     Home
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link active" aria-current="page" to="/about">
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/about"
+                  >
                     About
                   </Link>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <Link
-                    class="nav-link active"
+                    className="nav-link active"
                     aria-current="page"
                     to="/addemployees"
                   >
                     Add Employees
                   </Link>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <Link
-                    class="nav-link active"
+                    className="nav-link active"
                     aria-current="page"
                     to="/employees"
                   >
