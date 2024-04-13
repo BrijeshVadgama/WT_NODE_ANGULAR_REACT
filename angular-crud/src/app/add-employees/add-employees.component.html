@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <form #EmpForm="ngForm" (ngSubmit)="saveEmp(EmpForm.value)">
+    <div class="mb-3">
+      <label for="" class="form-label">Employee Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="EmployeeName"
+        [(ngModel)]="data.EmployeeName"
+        autocomplete="off"
+        placeholder="Employee Name"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Employee Address</label>
+      <input
+        type="text"
+        class="form-control"
+        name="EmployeeAddress"
+        [(ngModel)]="data.EmployeeAddress"
+        autocomplete="off"
+        placeholder="Employee Address"
+      />
+    </div>
+    <button class="btn btn-primary">{{ idEdit ? "Update" : "Submit" }}</button>
+  </form>
+</div>
