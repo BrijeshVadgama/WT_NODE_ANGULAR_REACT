@@ -1,17 +1,17 @@
 const mongoose = require("mongoose");
-const EmpSchema = mongoose.Schema({
-  EmployeeId: {
+const StudentSchema = mongoose.Schema({
+  StudentId: {
     type: Number,
     unique: true,
   },
-  EmployeeName: {
+  StudentName: {
     type: String,
     required: true,
   },
-  EmployeeAddress: {
+  StudentAddress: {
     type: String,
     required: true,
   },
 });
-const Employees = mongoose.model("Employees", EmpSchema);
-module.exports = Employees;
+const Student = mongoose.model("Student", StudentSchema);
+module.exports = Student;

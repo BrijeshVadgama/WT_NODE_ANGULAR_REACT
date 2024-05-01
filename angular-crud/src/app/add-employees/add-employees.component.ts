@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ApiEmployeesService } from '../services/api-employees.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ApiEmployeesService } from '../services/api-employees.service';
 
 @Component({
   selector: 'app-add-employees',

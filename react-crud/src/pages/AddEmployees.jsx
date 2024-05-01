@@ -94,9 +94,7 @@ const AddEmployees = () => {
         {id === undefined && (
           <button
             className="btn btn-primary"
-            onClick={() => {
-              add();
-            }}
+            onClick={() => { add(); }}
           >
             Add
           </button>
